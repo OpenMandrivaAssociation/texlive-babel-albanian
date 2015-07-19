@@ -6,7 +6,7 @@
 # catalog-version 1.0c
 Name:		texlive-babel-albanian
 Version:	1.0c
-Release:	8
+Release:	9
 Summary:	Support for Albanian within babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/albanian

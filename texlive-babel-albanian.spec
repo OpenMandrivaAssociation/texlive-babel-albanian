@@ -1,19 +1,13 @@
-# revision 30254
-# category Package
-# catalog-ctan /macros/latex/contrib/babel-contrib/albanian
-# catalog-date 2011-09-19 08:05:09 +0100
-# catalog-license lppl
-# catalog-version 1.0c
 Name:		texlive-babel-albanian
-Version:	1.0c
-Release:	10
+Version:	57005
+Release:	1
 Summary:	Support for Albanian within babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/albanian
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.r57005.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.doc.r57005.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.source.r57005.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,24 +18,24 @@ The package provides support for typesetting Albanian (as part
 of the babel system).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/babel-albanian/albanian.ldf
-%doc %{_texmfdistdir}/doc/generic/babel-albanian/albanian.pdf
+%{_texmfdistdir}/tex/generic/babel-albanian
+%doc %{_texmfdistdir}/doc/generic/babel-albanian
 #- source
-%doc %{_texmfdistdir}/source/generic/babel-albanian/albanian.dtx
-%doc %{_texmfdistdir}/source/generic/babel-albanian/albanian.ins
+%doc %{_texmfdistdir}/source/generic/babel-albanian
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 

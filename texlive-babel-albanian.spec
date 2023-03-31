@@ -1,6 +1,6 @@
 Name:		texlive-babel-albanian
 Version:	57005
-Release:	1
+Release:	2
 Summary:	Support for Albanian within babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/albanian

@@ -3,7 +3,7 @@ Version:	57005
 Release:	2
 Summary:	Support for Albanian within babel
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/albanian
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/albanian
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-albanian.doc.r%{version}.tar.xz
